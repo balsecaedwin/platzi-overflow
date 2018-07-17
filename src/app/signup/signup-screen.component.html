@@ -1,0 +1,27 @@
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+  <mat-form-field>
+    <input type="text" matInput placeholder="Nombre" formControlName="firstName" id="firstName">
+  </mat-form-field>
+  <mat-form-field>
+    <input type="text" matInput placeholder="Apellidos" formControlName="lastName" id="lastName">
+  </mat-form-field>
+  <mat-form-field>
+    <input type="email" matInput placeholder="Correo Elecrónico" formControlName="email" id="email">
+  </mat-form-field>
+  <mat-form-field>
+    <input type="password" matInput placeholder="Contraseña" formControlName="password" id="password" name="password">
+  </mat-form-field>
+  <mat-form-field>
+    <input type="password" matInput placeholder="Repita la Contraseña" formControlName="passwordRe" id="passwordRe"
+           [errorStateMatcher]="matcher" name="passwordRe">
+    <mat-hint></mat-hint>
+    <mat-error>
+      Las constraseñas no <strong>coinciden</strong>
+    </mat-error>
+  </mat-form-field>
+  <button type="submit" mat-raised-button color="accent" onclick="if (password.value !== passwordRe.value) passwordRe.value=''">Crear Cuenta</button>
+  <p style="text-align: center">
+    ¿Ya estás registrado?
+    <a mat-button color="primary" [routerLink]="['/signin']">Inicia Sesión</a>
+  </p>
+</form>
