@@ -8,12 +8,8 @@ import {
   MatInputModule,
   MatListModule,
   MatGridListModule,
-<<<<<<< HEAD
   MatRadioModule,
   MatProgressSpinnerModule
-=======
-  MatRadioModule
->>>>>>> edfb54a645a354546c104088476f637473519069
 } from '@angular/material';
 
 const modules =  [
@@ -24,12 +20,8 @@ const modules =  [
   MatInputModule,
   MatListModule,
   MatGridListModule,
-<<<<<<< HEAD
   MatRadioModule,
   MatProgressSpinnerModule
-=======
-  MatRadioModule
->>>>>>> edfb54a645a354546c104088476f637473519069
 ];
 
 @NgModule({
