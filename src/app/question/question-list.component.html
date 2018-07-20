@@ -1,3 +1,20 @@
+<<<<<<< HEAD
+<mat-spinner *ngIf="loading"></mat-spinner>
+<div *ngIf="!loading">
+  <mat-list>
+    <mat-list-item *ngFor="let question of questions" [routerLink]="['questions', question._id]">
+      <i *ngIf="question.icon === 'none'" mat-list-icon class="material-icons help">help</i>
+      <i *ngIf="question.icon !== 'none'" mat-list-icon class="{{question.icon}}"></i>
+      <h4 mat-line>{{question.title}}</h4>
+      <p mat-line>
+        <small>{{question.answers.length}} respuestas - {{question.createdAt | amLocale: 'es' | amTimeAgo}}</small>
+      </p>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+  </mat-list>
+  <button mat-fab class="add-question" color="accent" [routerLink]="['questions/new']">+</button>
+</div>
+=======
 <mat-list>
   <mat-list-item *ngFor="let question of questions" [routerLink]="['questions', question._id]">
     <i *ngIf="question.icon === 'none'" mat-list-icon class="material-icons help">help</i>
@@ -10,3 +27,4 @@
   <mat-divider></mat-divider>
 </mat-list>
 <button mat-fab class="add-question" color="accent" [routerLink]="['questions/new']">+</button>
+>>>>>>> edfb54a645a354546c104088476f637473519069

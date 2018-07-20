@@ -4,6 +4,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MomentModule } from 'ngx-moment';
 import { AppComponent } from './app.component';
 import { Routing } from './app.routing';
+<<<<<<< HEAD
+import { HttpModule } from '@angular/http';
+=======
+>>>>>>> edfb54a645a354546c104088476f637473519069
 
 // Meterial Angular
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -36,7 +40,12 @@ import { QuestionFormComponent } from './question/question-form.component';
     MomentModule,
     FormsModule,
     ReactiveFormsModule,
+<<<<<<< HEAD
+    Routing,
+    HttpModule
+=======
     Routing
+>>>>>>> edfb54a645a354546c104088476f637473519069
   ],
   providers: [],
   bootstrap: [AppComponent]

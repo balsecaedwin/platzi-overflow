@@ -8,7 +8,11 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+<<<<<<< HEAD
+    "start:server": "set NODE_ENV=development& set DEBUG=platzi-overflow* & nodemon server/index.js --exec babel-node",
+=======
     "start:server": "set DEBUG=platzi-overflow* & babel-node server/index.js",
+>>>>>>> edfb54a645a354546c104088476f637473519069
     "start:client": "ng serve"
   },
   "private": true,
@@ -27,6 +31,10 @@
     "angular-ui-validate": "^1.2.3",
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
+<<<<<<< HEAD
+    "body-parser": "^1.18.3",
+=======
+>>>>>>> edfb54a645a354546c104088476f637473519069
     "concurrently": "^3.6.0",
     "core-js": "^2.5.4",
     "debug": "^3.1.0",
@@ -35,7 +43,14 @@
     "moment": "^2.22.2",
     "ngx-moment": "^3.1.0",
     "nodemon": "^1.18.3",
+<<<<<<< HEAD
+    "rxjs": "^6.2.2",
+    "rxjs-compat": "^6.2.2",
+    "sweet-scroll": "^3.0.1",
+    "url-join": "^4.0.0",
+=======
     "rxjs": "^6.0.0",
+>>>>>>> edfb54a645a354546c104088476f637473519069
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
