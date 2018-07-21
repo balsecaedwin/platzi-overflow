@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Question } from './question.model';
 import { QuestionService } from './question.service';
+import { AuthService } from '../auth/auth.service';
 
 @Component({
   selector: 'app-question-list',
@@ -28,7 +29,10 @@ import { QuestionService } from './question.service';
 })
 
 export class QuestionListComponent implements OnInit {
-  constructor(private questionService: QuestionService) {}
+  constructor(
+    private questionService: QuestionService,
+    private authService: AuthService
+  ) {}
 
   questions: Question[];
   loading = true;
@@ -39,5 +43,9 @@ export class QuestionListComponent implements OnInit {
         this.questions = questions;
         this.loading = false;
       })
+  }
+
+  isLoggedIn() {
+    return this.authService.isLoggedIn();
   }
 }

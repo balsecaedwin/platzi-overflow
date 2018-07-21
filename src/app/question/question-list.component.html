@@ -11,5 +11,7 @@
     </mat-list-item>
     <mat-divider></mat-divider>
   </mat-list>
-  <button mat-fab class="add-question" color="accent" [routerLink]="['questions/new']">+</button>
+  <div *ngIf="isLoggedIn()">
+    <button mat-fab class="add-question" color="accent" [routerLink]="['questions/new']"><mat-icon>add</mat-icon></button>
+  </div>  
 </div>
