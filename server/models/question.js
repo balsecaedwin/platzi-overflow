@@ -6,7 +6,7 @@ const QuestionSchema = Schema({
   title: { type: String, required: true },
   description: { type: String, required: true },
   icon: { type: String, required: true },
-  createdAt: { type: String, required: true, default: Date.now },
+  createdAt: { type: String, required: true, default: new Date() },
   user: { type: ObjectId, ref: 'User', required: true },
   answers: [{ type: ObjectId, ref: 'Answer', default: [] }]
 })

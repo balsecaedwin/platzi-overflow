@@ -7,7 +7,21 @@ import { ActivatedRoute } from '@angular/router';
   selector: 'app-question-detail',
   templateUrl: './question-detail.component.html',
   styleUrls: ['./question-detail.component.css'],
-  providers: [QuestionService]
+  providers: [QuestionService],
+  styles: [`
+    mat-spinner {
+      position: fixed;
+      z-index: 999;
+      height: 2em;
+      width: 2em;
+      overflow: show;
+      margin: auto;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+  `]
 })
 
 export class QuestionDetailComponent implements OnInit, OnDestroy {
